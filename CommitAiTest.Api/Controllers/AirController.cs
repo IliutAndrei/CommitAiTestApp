@@ -4,9 +4,9 @@ namespace CommitAiTest.Api.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class HealthController : ControllerBase
+    public class AirController : ControllerBase
     {
         [HttpGet]
-        public IActionResult Get() => Ok(new { status = "Health seems to be fine" });
+        public IActionResult Get() => Ok(new { status = "Air is good" });
     }
 }
