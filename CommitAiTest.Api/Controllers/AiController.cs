@@ -7,6 +7,9 @@ namespace CommitAiTest.Api.Controllers
     public class AiController : ControllerBase
     {
         [HttpGet]
-        public IActionResult Get() => Ok(new { status = "Ollama is running just fine!" });
+        public IActionResult Get() => Ok(new { status = "ollama is running just fine!" });
+
+        [HttpGet]
+        public IActionResult GetVersion() => Ok(new { status = "ollama version is 0.15.4" });
     }
 }
